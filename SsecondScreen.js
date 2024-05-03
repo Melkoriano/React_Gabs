@@ -2,7 +2,7 @@ import React from 'react';
 import { View,Dimensions, Text, StyleSheet, ImageBackground, TouchableOpacity, useWindowDimensions } from 'react-native';
 import Svg, {Circle,Polygon} from 'react-native-svg';
 
-function SecondScreen({navigation}) {
+function SsecondScreen({navigation}) {
   const squareSize = 200;
   const circleRadius = 60;
   const centerX = squareSize;
@@ -29,7 +29,7 @@ function SecondScreen({navigation}) {
            </Text>
       </View>    
       {/*Clicar no circulo leva até outra pagina*/}
-      <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('Planta1')}>    
+      {/*<TouchableOpacity style={styles.container} onPress={() => navigation.navigate('Planta1')}>    
         <Svg style={styles.svgContainer}>
           <Circle cx={centerX} cy={centerY - squareSize / 2} r={circleRadius} fill="red" />
         </Svg>
@@ -39,7 +39,7 @@ function SecondScreen({navigation}) {
           <Circle cx={centerX + squareSize / 2} cy={centerY} r={circleRadius} fill="blue" />
           <Circle cx={centerX} cy={centerY + squareSize / 2} r={circleRadius} fill="green" />
           <Circle cx={centerX - squareSize / 2} cy={centerY} r={circleRadius} fill="yellow" />
-        </Svg>
+  </Svg>*/}
     </View>
     
   );
@@ -84,4 +84,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SecondScreen;
+export default SsecondScreen;
